@@ -1,12 +1,12 @@
 
 
-*number 1*
+Number 1
 UserFirstName=input("enter your first name")
 UserLastName=input("enter your last name")
 print("Hello" + " " + UserLastName+ " " +UserFirstName)
 
 
-*number 2*
+Number 2
 Accept an integer (n) input from the user and compute the value of n+nn+nnn.
 For example if n=4 then n + nn + nnn = 4 + 44 + 444 = 492
 
