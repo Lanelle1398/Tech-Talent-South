@@ -4,6 +4,7 @@ number 1
 UserFirstName=input("enter your first name")
 UserLastName=input("enter your last name")
 print("Hello" + " " + UserLastName+ " " +UserFirstName)
+i take an input for firstname and for last name and I say hello. I concatenate these strings together and add spaces.
 
 
 number 2
@@ -17,9 +18,13 @@ x3 = int( "%s%s%s" % (UserInput,UserInput,UserInput) )
 y=x+x2+x3
 print(str(x)+ "+"+ str(x2)+ "+" + str(x3)+"="+str(y))
 
+I accept the user input as an int. I print the take the int as string once, then twice, then three times(x, x2,x3).  I convert it back into an int. I add these integers together and print the required output.
+
 number 3
 Country=input("what country are you from \n")
 print(" I have heard that " + Country+ " is beautiful country!")
+
+I take the user input and conatenate it into the string.
 
 #number 4
 What is the output of the following Python code
@@ -34,10 +39,10 @@ The code does not exeute through the loop because x**2 is equal to 100 not more
 number 5
 a = [10, 20]
 b = a
-b +=[30, 40]
-print(a)
-print(b)
-the answer is [10,20,30, 40] for both a and b because the lists are concetanated into one
+b +=[30, 40] //this is basically b=b+a which is [10,20,30,40]
+print(a) //30, 40 is added to the list a 
+print(b) //30, 40 is added to the list b
+the answer is [10,20,30, 40] for both a and b because the lists are concetanated into one. 
 
 number 6
 What is the output of the following code and what arithmetic operators is being used here?
@@ -59,3 +64,24 @@ number 10
 Jupyter notebook is an open source software that allows you to share documents on the web that contains code, equations etc.
 Jupyter notebook is a development environment
 Some alternatives to Jupter notebook are VSCode, nteract, & Jupyterlyte
+
+
+number 11
+Write a for loop that multiplies the number 4 by all the integers from 0 to 10 and prints the following for each: "4 multiplied by [i] is [x]"
+
+for x in range(1, 11):
+    y=4*x
+    print( " 4 multiplied by " + str(x) + " is "+ str(y))
+    
+  I iterate through a for loop from 1 to 10. I multiply 4 by each number that comes next in the loop and print out the right statement.
+
+number 12 -multiplication table
+for x in range(1,11):
+    for y in range(1,11):
+        print(x*y, end='\t')
+    print('')
+        
+        # I create a nested loop and mulitply each value in x by the values in y.
+        #end allows the numbers to stay on the same line
+        #\t\ allows the user to move to a new line
+        #print('') inserts a new lien at each set of 10
