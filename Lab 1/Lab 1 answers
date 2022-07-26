@@ -85,3 +85,7 @@ for x in range(1,11):
         #end allows the numbers to stay on the same line
         #\t\ allows the user to move to a new line
         #print('') inserts a new lien at each set of 10
+        
+ Is a String Immutable in Python?
+ Strings are immutable in Python. 
+What is the output of x AND explain why that is the output for:
