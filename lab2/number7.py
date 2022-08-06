@@ -1,3 +1,4 @@
+#Guess a number between 1 to 9 given by the user. Hint. Random
 import random
 guessedNumber="" #initialize guessedNumber
 randomNumber=random.randint(1, 10)
