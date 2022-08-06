@@ -1,0 +1,5 @@
+#choose all the valid string creation in python
+str1 = “str1” - valid
+str1 = 'str1' - valid
+str1 = ”'str1”' # invalid
+str1 = str(“str1”)-valid
