@@ -15,7 +15,8 @@ for i in range(index):
 #     if re.match(r'[a-z][\w.-]+@[a-z]+\.[a-z]{1,3}$', p[1], re.I):
 #         #print (formataddr(p))
 #         print(email.utils.formataddr(p))
-//other methodd
+
+#other methodd
 
 # import re
 # index=int(input()) #loop twice; user should enter 2
