@@ -17,18 +17,18 @@ class Complex(object):
         return Complex(realNumbersSubtract,imaginaryNumbersSubtract)
     def __mul__(self, no):
         self.no=no
-        xVal=(self.real*no.real) - (self.imaginary*no.imaginary)
-        yVal=(self.real*no.imaginary)+ (self.imaginary+no.real)
+        xVal=(self.real* no.real) - (self.imaginary * no.imaginary)
+        yVal=(self.real * no.imaginary)+ (self.imaginary * no.real)
         return Complex(xVal,yVal)
+    
     def __truediv__(self, no):
-        conjugate = Complex(no.real, (-no.imaginary))
-        selfVals = self*conjugate
-        noVals = no*conjugate
+        selfVals = Complex(self.real, self.imaginary) * Complex(no.real, (-no.imaginary))
+        noVals = Complex(no.real,no.imaginary) * Complex(no.real, (-no.imaginary))
         return Complex((selfVals.real/noVals.real), (selfVals.imaginary/noVals.real))
     def mod(self):
         self.self=self
         placeHolder=math.sqrt((pow(self.real,2))+(pow(self.imaginary, 2)))
-        return Complex(placeHolder,0)
+        return Complex(placeHolder,0) #because the imaginary part is 0
     def __str__(self):
         if self.imaginary == 0:
                result = "%.2f+0.00i" % (self.real)
