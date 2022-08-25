@@ -29,12 +29,8 @@ studentGrades.fname2=person2.fname
 studentGrades.lname2=person2.lname
 studentGrades.studentID2=person2.studentID
 
-#print(person2.desc())
-# take multiple inputs in array
+
 input_int_array= [int(x) for x in input("enter a list of numbers").split()]
-#print(studentGrades.desc(input_int_array))
 print(studentGrades.desc(input_int_array))
 
-#studentGrades.myList=input_int_array 
-#print("array:", input_int_array)
 
