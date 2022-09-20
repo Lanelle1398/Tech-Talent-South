@@ -27,8 +27,8 @@ print(meta)
 
 
 #return only the treatment and sex columns using []:
-# metaCopy<-meta[, c('treatment', 'sex')]
-# print(metaCopy)
+metaCopy<-meta[, c('treatment', 'sex')]
+print(metaCopy)
 
 # return the treatment values for samples 5, 7, 9, and 10 using []:
 metaCopy2<-meta[c(5,7,9,10), 3]
@@ -38,7 +38,7 @@ metaCopy5<-subset(meta, treatment == 'P')
 print(metaCopy5)
 
 #use filter()/select()to return only the stage and treatment columns for those samples with myc > 5000
-#see number2.r
+#on a separate file. see number2.r
 
 #remove the treatment column from the dataset using []:
 meta4 <- meta[, -3 ]
