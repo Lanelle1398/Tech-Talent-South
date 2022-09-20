@@ -36,10 +36,9 @@ metaCopy2<-meta[c(5,7,9,10), 3]
 # use subset() to return all data for those samples receiving treatment P:
 metaCopy5<-subset(meta, treatment == 'P')
 print(metaCopy5)
+
 #use filter()/select()to return only the stage and treatment columns for those samples with myc > 5000
-library(dplyr)
-filter(meta, myc > 5000) %>% select(stage, treatment)
-print(filter(meta, myc > 5000) %>% select(stage, treatment))
+#see number2.r
 
 #remove the treatment column from the dataset using []:
 meta4 <- meta[, -3 ]
