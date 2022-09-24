@@ -22,9 +22,6 @@ list_of_formulas
 
 heights_removed <- na.omit(heights) 
 
-#wrong
-# linear_model <- lm(list_of_formulas, data=heights_removed)
-#fit_with(lm,list_of_formulas )
 
 fit_linear_model <- heights_removed %>% fit_with(lm, list_of_formulas)
 
