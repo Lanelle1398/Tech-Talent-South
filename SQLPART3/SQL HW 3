@@ -1,0 +1,25 @@
+1. 
+UPDATE Favorite
+SET ArtistID = 'NULL',AlbumID = 'NULL', SongID = 'NULL',GenreID = 'NULL',  UpdatedAT = CURRENT_TIMESTAMP
+WHERE UserID=1230;
+
+
+UPDATE Favorite
+SET ArtistID = 'NULL',AlbumID = 'NULL', SongID = 'NULL',GenreID = 'NULL', UpdatedAT = CURRENT_TIMESTAMP
+WHERE UserID=1240;
+
+
+UPDATE User
+SET UpdatedAT = CURRENT_TIMESTAMP
+WHERE UserID=1230 AND USERID=1240;
+
+2. SELECT User.FirstName, User.LastName,Favorite.SongID,Favorite.genreid,Favorite.ArtistId,Favorite.AlbumId
+From User
+Inner JOIN Favorite ON User.UserId=Favorite.UserId;
+
+3.
+SELECT albums.name, songs.album_id, songs.length
+FROM albums
+INNER JOIN songs ON albums.id=songs.id
+WHERE songs.length <> '5:01' AND songs.length <> '5:09' AND songs.length <> '5:16' AND songs.length <> '5:17' AND songs.length <> '5:37' AND songs.length <> '5:55'  AND songs.length <> '7:54' AND songs.length <> '8:13'
+GROUP BY songs.length 
